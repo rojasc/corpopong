@@ -29,6 +29,14 @@
     paper-button {
       @apply --paper-font-button;
     }
+    paper-toggle-button {
+      --paper-toggle-button-unchecked-bar-color: red; 
+    }
+
+    paper-toggle-button[checked] {
+      --paper-toggle-button-checked-bar-color: green; 
+    }
+
     </style>
     <firebase-auth id="auth" user="{{user}}" provider="google"></firebase-auth>
     <firebase-document path="/players/[[user.uid]]" data="{{profile}}"></firebase-document>
